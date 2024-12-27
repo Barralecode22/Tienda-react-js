@@ -1,0 +1,32 @@
+[
+    {
+        "src": "./assets/TODO-PORTADA.jpg",
+        "title": "class",
+        "text": "Proyecto diseñado en figma y desarrollado con html y css",
+        "icons": [
+            "./assets/icono-figma.png",
+            "./assets/icono-html.png",
+            "./assets/icono-css.png"
+        ]
+    },
+    {
+        "src": "./assets/Class-Portada.jpg",
+        "title": "Cambio",
+        "text": "Prototipo diseñado en Figma, para una app de clases.",
+        "icons": [
+            "./assets/icono-photoshop.png",
+            "./assets/icono-illustrator.png",
+            "./assets/icono-figma.png"
+        ]
+    },
+    {
+        "src": "./assets/MIXTO-PORTADA.jpg",
+        "title": "Mixto",
+        "text": "E-commerce de un restaurante para reservar lugar y pedir comida.",
+        "icons": [
+            "./assets/icono-figma.png",
+            "./assets/icono-photoshop.png",
+            "./assets/icono-wordpress.png"
+        ]
+    }
+]
