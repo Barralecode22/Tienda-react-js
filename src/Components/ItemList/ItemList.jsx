@@ -1,30 +1,19 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import "./ItemList.css"
+import React from 'react';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import './ItemList.css';
 
-const ItemList = () => {
+const ItemList = ({ productos }) => {
+    return (
+        <div className="ItemsProducts">
+            {productos.length > 0 ? (
+                productos.map(producto => (
+                    <ItemDetail key={producto.id} {...producto} />
+                ))
+            ) : (
+                <p>No hay productos disponibles.</p>
+            )}
+        </div>
+    );
+};
 
-  const [peliculas, setPeliculas] = userState([]);
-  const [busqueda, setBusqueda] = useState("");
-
-  const MI_KEY ="c9f04fa4";
-
-  useEffect(() => {
-    fetch (`http://www.omdbapi.com/?apikey=${MI_KEY}&s=${busqueda}`)
-    .then(respuesta=> respuesta.json())
-    .then(data => {
-      setPeliculas(data.Search);
-    })
-    .catch(error => console.log(error))
-  }, [busqueda])
-
-  return (
-    <div>
-      <form>
-        <input type="text" name="busqueda" placeholder="Buscar..." />
-      </form>
-    </div>
-  )
-}
-
-export default ItemList
+export default ItemList;

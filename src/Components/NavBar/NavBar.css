@@ -22,3 +22,8 @@ li {
 h1 {
     color: white;
 }
+
+nav a{
+    color: inherit;
+    text-decoration: none;
+}

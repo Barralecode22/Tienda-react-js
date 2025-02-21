@@ -1,4 +1,5 @@
 import CardWidget from '../CardWidget/CardWidget'
+import { NavLink, Link } from "react-router-dom";
 import './NavBar.css'
 
 const NavBar = () => {
@@ -8,16 +9,15 @@ const NavBar = () => {
 
       <nav>
         <ul>
-          <li>Entradas</li>
-          <li>Peliculas</li>
-          <li>Comida</li>
-          <li>Bebidas</li>
-          <li>Golosinas</li>
+          <li><Link to="/">Inicio</Link></li>
+          <li><NavLink to="/Categorias/3">Comidas</NavLink></li>
+          <li><NavLink to="/Categorias/2">Bebidas</NavLink></li>
+          <li><NavLink to="/Categorias/4">Golosinas</NavLink></li>
         </ul>
       </nav>
-      <CardWidget/>
+      <CardWidget />
     </header>
   )
 }
 
-export default NavBar
+export default NavBar;

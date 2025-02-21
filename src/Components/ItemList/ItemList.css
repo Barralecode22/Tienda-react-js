@@ -1,13 +1,14 @@
-form {
-    display: flex;
-    justify-content: center;
-    margin: 5%;
+.ItemsProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
-input{
-    width: 250px;
-    border-radius: 10px;
-    padding: 12px;
-    border: solid 1px rgb(92, 92, 92);
-    margin: 15% 0;
+.ItemsProducts p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    grid-column: span 2;
 }

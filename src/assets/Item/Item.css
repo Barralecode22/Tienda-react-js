@@ -1,0 +1,47 @@
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Contenedor:hover {
+    transform: scale(1.05);
+}
+
+.imgProduct {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Contenedor h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.Contenedor h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.Contenedor p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+@media (max-width: 480px) {
+    .Contenedor {
+        max-width: 100%;
+    }
+}
